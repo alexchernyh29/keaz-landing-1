@@ -1,0 +1,218 @@
+.registration
+    position relative
+    background-color $c-orange_1
+    transition background-color .3s
+
+    &.is-success
+        background-color $c-green
+        .registration__success
+            display block
+        .registration__form
+            display none
+
+    &__success
+        display none
+        width 150px
+        margin 0 auto
+        img
+            width 100%
+
+    &__form-info
+        font-family $Play
+        font-weight 400
+        font-size 16px
+        line-height 22px
+        color $c-white
+        padding-bottom 10px
+
+        +below(767px)
+            font-size 13px
+            line-height 18px
+
+    &__content
+        position relative
+        padding-top 130px
+        padding-bottom 105px
+
+        +below(1199px)
+            padding 85px 60px 80px
+
+        +below(767px)
+            padding 85px 0 90px
+
+    &__hashtag
+        content ""
+        position absolute
+        top -105px
+        width 100%
+        left 50%
+        transform translateX(-50%)
+        
+        +below(1200px)
+            top -8.5vw
+        
+        img
+            width 100%
+
+
+    &__title
+        font-family $Play
+        font-style normal
+        font-size 60px
+        line-height 1.2
+        color $c-white
+
+        +below(767px)
+            width 100%
+            font-size 48px
+
+    &__text
+        font-family $Play
+        display flex
+        padding-bottom 37px
+        flex-direction column
+        align-items flex-start
+        font-weight 400
+        font-size 30px
+        line-height 45px
+        color $c-white
+
+        +below(767px)
+            font-size 22px
+            line-height 33px
+
+
+    &__item
+        display flex
+        flex-direction row
+        justify-content space-between
+
+        &:first-child
+            padding-left 0px
+            
+        +below(1199px)
+            flex-direction column
+
+        input
+            padding-left 17px
+            &::placeholder
+                font-family $Play 
+                font-weight 400
+                font-size 16px
+                line-height 22px
+                color #000000
+        
+    &__form
+        max-width 900px
+        width 100%
+    
+    &__input
+        width 30%
+        margin-right 20px
+        height 56px
+        border none
+        background $c-whitetext
+
+        &:last-child
+            margin-right 0
+
+        +below(1199px)
+            margin-left 0
+            margin-top 20px
+            width 100%
+
+        &_error
+            background $c-pink
+            border 1px solid $c-red
+
+        &_companyname
+            width 50%
+            margin-top 20px
+
+            +below(1199px)
+                width 100%
+
+        &_post
+            width 50%
+            margin-top 20px
+
+            +below(1199px)
+                width 100%             
+
+    &__agree
+        font-family $Play
+        width 590px
+        font-weight 400
+        font-size 16px
+        line-height 22px
+        color $c-white
+
+        a
+            color $c-white
+            transition color .3s
+
+            &:hover
+                color $c-bluekeaz
+
+        +below(767px)
+            font-size 13px
+            line-height 18px
+            width 100%
+            margin-top -10px
+            
+    &__actions
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        align-items center
+        margin-top 20px
+
+        +below(767px)
+            flex-direction column
+            align-items flex-start
+
+    &__button
+        padding 18px 30px
+        margin-left 65px
+        background $c-bluebutton
+        border-radius 100px
+        border 0
+        font-family $Play
+        font-weight 700
+        font-size 16px
+        line-height 19px
+        color $c-white
+        transition background-color .3s
+
+        &:hover
+            background-color $c-bluekeaz
+            
+        +below(767px)
+            margin-top 45px
+            margin-left 0
+    
+    &__mailing
+        padding-top 30px
+        display flex
+        flex-flow row nowrap
+        justify-content flex-start
+        align-items center
+
+        +below(767px)
+            padding-top 20px
+    
+    &__mailing-check
+        margin-right 10px
+        width 20px
+        height 20px
+
+    &__mailing-info
+        font-family $Play
+        font-weight 400
+        font-size 16px
+        line-height 22px
+        color $c-white
+
+        +below(767px)
+            font-size 13px
+            line-height 18px

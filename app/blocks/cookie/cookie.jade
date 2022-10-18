@@ -1,0 +1,7 @@
+mixin cookie()
+
+    +b('section').cookie.is-active
+        .container
+            +e.content
+                +e('p').text Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы&nbsp;даете свое согласие на&nbsp;работу с&nbsp;этими файлами.
+                +e('button').button ok

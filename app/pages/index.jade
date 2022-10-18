@@ -1,0 +1,19 @@
+extends /blocks/layout-default/layout-default
+include /blocks/banner/banner
+include /blocks/description/description
+include /blocks/footer/footer
+include /blocks/event/event
+include /blocks/registration/registration
+include /blocks/cookie/cookie
+
+block head
+	- var pageTitle = 'KEAZ Landing';
+
+block content
+	main
+		+banner()
+		+description()
+		+event()
+		+registration()
+		+footer()
+		+cookie()

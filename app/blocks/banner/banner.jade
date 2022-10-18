@@ -1,0 +1,21 @@
+mixin banner()
+
+    +b('section').banner
+        .container
+            +e.intro
+                +e.content
+                    +e.logo
+                        img(src='./assets/images/logokeaz.svg')
+                    +e.info
+                        +e('p').place Екатеринбург,<br>конференц-зал,<br>отель Хилтон
+                        +e('p').date 21/04
+                    +e('h4').title ПРОЕКТИРУЕМ<br>С&nbsp;КЭАЗ 2022
+                    +e('button').button Зарегистрироваться
+                +e.rect
+                    img(src='./assets/images/banner-rect.png')
+                +e.bg
+                    img(src='./assets/images/banner-bg.png')
+                +e.hashtag
+                    img(src='./assets/images/prokeaz_blue.svg')
+            +e.desc
+                +e('p').text Конференция для проектировщиков электротехнического оборудования, объединяющая экспертов отрасли.<br><br>У&nbsp;вас есть уникальная возможность получить исчерпывающую информацию для работы с&nbsp;продукцией КЭАЗ, доступных сервисов и&nbsp;маркетинговой поддержке со&nbsp;стороны компании. Для участия в&nbsp;мероприятии обязательная <a href="#">регистрация</a>

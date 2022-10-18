@@ -1,0 +1,59 @@
+.footer
+    padding 40px 0
+    background-color $c-bluekeaz
+
+    +below(767px)
+        padding-top 30px
+        padding-bottom 35px
+
+    &__wrap
+        display flex
+        flex-direction row nowrap
+        justify-content space-between
+        align-items center
+
+        +below(767px)
+            flex-direction column
+            align-items center
+
+    &__logo
+        font-family $Play
+        font-style normal
+        font-weight 400
+        font-size 20px
+        line-height 23px
+        color $c-whitetext
+
+        +below(767px)
+            font-size 15px
+            line-height 17px
+            padding-bottom 20px
+
+    &__link
+        font-family $Play
+        font-style normal
+        font-weight 400
+        font-size 20px
+        line-height 23px
+        color $c-white
+        transition color .3s
+
+        &:hover
+            color $c-orange_1
+
+        &:first-child
+            padding-right 35px
+            
+            +below(767px)
+                padding-right 0px
+                margin-bottom 10px
+                
+        +below(1599px)
+            font-size 15px
+            line-height 17px
+
+    &__links
+        +below(767px)
+            display flex
+            flex-direction column
+            align-items center

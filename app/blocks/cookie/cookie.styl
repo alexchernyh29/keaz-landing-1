@@ -1,0 +1,45 @@
+.cookie
+    position fixed
+    z-index 5
+    bottom 0
+    left 0
+    right 0
+    background-color #EEF1F2
+    padding 20px 0
+    box-shadow 5px 0 5px rgba(0, 0, 0, .7)
+    display none
+
+    &.is-active
+        display block
+
+    &__content
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        align-items center
+
+    &__button
+        display inline-block
+        padding 12px 24px
+        border 0
+        border-radius 15px
+        text-transform uppercase
+        font-weight bold
+        background-color $c-orangemain
+        color $c-white
+        transition background-color .3s
+
+        &:hover
+            background-color $c-orange
+
+    &__text
+        max-width 80%
+        padding-right 20px
+        font-family $Play
+        font-weight 400
+        font-size 16px
+        line-height 22px
+
+        +below(767px)
+            font-size 13px
+            line-height 18px

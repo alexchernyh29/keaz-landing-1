@@ -1,0 +1,76 @@
+.event
+    background-color $c-white
+    padding-bottom 165px
+
+    +below(767px)
+        padding-bottom 135px
+
+    &__title
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 60px
+        line-height 1.2
+        color $c-black
+        padding-bottom 60px
+
+        +below(1199px)
+            font-size 48px
+
+        +below(767px)
+            font-size 36px
+
+    &__item
+        display flex
+        flex-direction row
+        justify-content flex-start
+        padding-top 30px
+        padding-bottom 30px
+        border-bottom 2px solid $c-bluekeaz
+
+        &:first-child
+            border-top 2px solid $c-bluekeaz
+
+        +below(1199px)
+            padding-top 30px
+            padding-bottom 30px
+
+        +below(767px)
+            flex-direction column
+
+    &__time
+        width 280px
+        flex-shrink 0
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 30px
+        line-height 42px
+        color $c-bluemain
+
+        +below(1199px)
+            width 180px
+            font-size 30px
+            line-height 42px
+
+        +below(767px)
+            font-size 22px
+            line-height 33px
+
+    &__stage
+        font-family $Play
+        font-style normal
+        font-weight 400
+        font-size 30px
+        line-height 45px
+        color $c-bluemain
+
+        +below(1199px)
+            font-size 30px
+            line-height 45px
+            padding-left 50px
+            
+        +below(767px)
+            font-size 22px
+            line-height 33px
+            padding-left 0px

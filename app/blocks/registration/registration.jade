@@ -1,0 +1,26 @@
+mixin registration()
+
+    +b('section').registration
+        .container
+            +e.content
+                +e.hashtag
+                    img(src='./assets/images/prokeaz_orange.svg')
+                +e('h4').title Регистрация
+                +e('p').text для регистрации на&nbsp;мероприятии заполните форму
+                +e.success
+                    img(src='./assets/images/success.svg')
+                +e('form').form
+                    +e('p').form-info Не все данные введены корректно!
+                    +e.item
+                        +e('input')(placeholder="ФИО *" required type='text').input._fullname._error ФИО *
+                        +e('input')(placeholder="Телефон *" required type='tel').input._phone Телефон *
+                        +e('input')(placeholder="Email *" required type="email").input._email Email *
+                    +e.item
+                        +e('input')(placeholder="Название компании").input._companyname Название компании
+                        +e('input')(placeholder="Должность").input._post Должность
+                    +e.mailing
+                        +e('input')(type="checkbox" checked).mailing-check
+                        +e('p').mailing-info Получать информационную рассылку о новостях и мероприятиях КЭАЗ
+                    +e.actions
+                        +e('p').agree Нажимая кнопку &laquo;Зарегистрироваться&raquo; вы&nbsp;соглашаетесь с&nbsp;<a href="#">политикой конфиденциальности</a> и&nbsp;<a href="#">соглашением об&nbsp;использовании сайта</a>
+                        +e('button')(type="submit").button Зарегистрироваться

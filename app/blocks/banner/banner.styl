@@ -1,0 +1,247 @@
+.banner
+    position relative
+    max-width 1600px
+    margin 0 auto
+
+    +below(1599px)
+        overflow hidden
+    
+    &__intro
+        position relative
+
+        +above(1600px)
+            position static
+            overflow hidden
+    
+    &__content
+        position relative
+        padding-top 40px
+        padding-bottom 80px
+        z-index 1
+
+        +below(767px)
+            padding-bottom 50px
+    
+    &__main-bg
+        position absolute
+        top 0
+        left 0
+        width 1400px
+
+
+        +above(1600px)
+            left auto
+            right 0
+
+        +below(1599px)
+            left 110px
+
+        img
+            width 100%
+            +below(768px)
+                width 0
+
+
+    &__hashtag
+        position absolute
+        top 350px
+        right 80px
+        width 600px
+
+        +below(1599px)
+            top 420px
+            right 0px
+            width 440px
+
+        +below(1039px)
+            top 490px
+
+        +below(767px)
+            position relative
+            width 100%
+            top auto
+            right auto
+            max-width 350px
+            margin 0 auto
+
+        img
+            width 100%
+
+    &__desc
+        padding-top 200px
+        padding-bottom 60px
+
+        +above(1600px)
+            position static
+            overflow hidden
+
+        +below(1599px)
+            position relative
+            padding-top 80px
+            padding-bottom 100px
+            
+        +below(767px)
+            padding-top 40px
+        
+        &::after
+            content ''
+            position absolute
+            bottom 0
+            right 0
+            height 795px
+            width 1095px
+            background url('../../assets/images/rect.png') no-repeat center
+            background-size 100%
+            
+            +below(1599px)
+                right auto
+                left 500px
+
+            +below(1199px)
+                left 280px
+
+            +below(767px)
+                content none
+
+    &__logo
+        width 185px
+        margin-bottom 60px
+
+        +below(1599px)
+            margin-bottom 40px
+
+        img
+            width 100%
+
+    &__info
+        display flex
+        flex-direction row
+        align-items flex-end
+        margin-bottom 75px
+
+        +below(1599px)
+            margin-bottom 50px
+
+    &__place
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 30px
+        line-height 36px
+        color $c-bluemain
+
+        +below(1599px)
+            font-size 24px
+            line-height 29px
+
+        +below(767px)
+            font-size 20px
+            line-height 24px
+
+    &__date
+        padding-left 30px
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 100px
+        line-height 1
+        color $c-bluemain
+
+        +below(1599px)
+            padding-left 30px
+            font-size 80px
+
+        +below(767px)
+            font-size 52px
+
+    &__title
+        margin-bottom 85px
+        font-family $Play
+        font-style normal
+        font-weight 700
+        font-size 90px
+        line-height 104px
+        color $c-orange
+
+        +below(1599px)
+            font-size 90px
+            line-height 104px
+
+        +below(767px)
+            font-size 46px
+            line-height 53px
+            margin-bottom 35px
+
+    &__button
+        padding 20px 25px
+        background $c-orangemain
+        border-radius 39px
+        font-family $Play
+        font-weight 500
+        font-size 20px
+        line-height 25px
+        text-align center
+        border 0
+        color $c-white
+        transition background-color .3s
+
+        &:hover
+            background-color $c-orange
+
+        +below(1599px)
+            font-size 20px
+            line-height 23px
+            padding 20px 20px
+
+    &__text
+        position relative
+        font-family $Play
+        font-style normal
+        font-weight 400
+        font-size 36px
+        line-height 45px
+        color $c-bluemain
+        z-index 1
+                
+        +below(1599px)
+            font-size 30px
+            line-height 45px
+
+        +below(767px)
+            font-size 22px
+            line-height 33px
+
+        a
+            color $c-orange_1
+            transition color .3s
+
+            &:hover
+                color $c-bluekeaz
+
+    &__rect
+        position absolute
+        top 0
+        right 365px
+        width 876px
+        
+        +below(1599px)
+            display none
+    
+    &__bg
+        position absolute
+        top 0
+        right 0
+        width 1400px
+
+        +below(1599px)
+            top auto
+            bottom 0
+            right auto
+            left 200px
+
+        +below(767px)
+            left 0
+            bottom 20%
+
+        img
+            width 100%
